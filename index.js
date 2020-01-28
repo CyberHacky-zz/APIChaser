@@ -18,7 +18,6 @@ app.on('ready', () => {
 
    win = new BrowserWindow({show: false});
 
-
 });
 
 function createContactWindow(){
@@ -43,7 +42,7 @@ function createAboutWindow(){
     addWindow.loadURL(path.join(__dirname, './src/about.html'));
 }
 
-function createPentestWindow(){
+function createoldWindow(){
 
     addWindow = new BrowserWindow({
         width: 1200,
@@ -51,7 +50,7 @@ function createPentestWindow(){
         title: 'New Page',
     });
     var path = require('path');
-    addWindow.loadURL(path.join(__dirname, './src/test/test.html'));
+    addWindow.loadURL(path.join(__dirname, './oldinterface/index.html'));
 }
 
 
@@ -100,10 +99,6 @@ const menuTemplate = [
                 click(){createAboutWindow();}
             
             },
-            {label: 'New Page',
-                click(){createPentestWindow();}
-            
-            },
             {label: 'Donate'},
 
         ] 
@@ -119,7 +114,7 @@ if (process.env.NODE_ENV !== 'production') {
 
     menuTemplate.push({
     
-        label: 'View',
+        label: 'Extra',
         submenu:[
             {
                 label: 'Toogle Developer Tools',
@@ -128,7 +123,12 @@ if (process.env.NODE_ENV !== 'production') {
                     focusedwindow.toggleDevTools();
                     
                 }
-            }
+            },
+
+            {label: 'OLD UI',
+                click(){createoldWindow();}
+            
+            },
         ]
 
     });
