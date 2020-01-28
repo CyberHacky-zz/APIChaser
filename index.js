@@ -43,6 +43,17 @@ function createAboutWindow(){
     addWindow.loadURL(path.join(__dirname, './src/about.html'));
 }
 
+function createPentestWindow(){
+
+    addWindow = new BrowserWindow({
+        width: 1200,
+        height: 1000,
+        title: 'New Page',
+    });
+    var path = require('path');
+    addWindow.loadURL(path.join(__dirname, './src/test/test.html'));
+}
+
 
 const menuTemplate = [
     {
@@ -87,6 +98,10 @@ const menuTemplate = [
             },
             {label: 'About',
                 click(){createAboutWindow();}
+            
+            },
+            {label: 'New Page',
+                click(){createPentestWindow();}
             
             },
             {label: 'Donate'},
