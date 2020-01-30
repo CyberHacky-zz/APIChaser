@@ -1,18 +1,14 @@
 {
-  "name": "chaser",
+  "name": "apichaser",
   "version": "1.0.0",
-  "description": "API Pentesting Software",
-  "main": "main.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "electron": "electron ."
   },
-  "keywords": [
-    "API",
-    "Pentesting"
-  ],
-  "author": "Dharmin Suthar, Gaurav Gogia",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^7.1.7"
+    "axios": "^0.19.2"
   }
 }
