@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API Chaser</title>
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="API_Chaser.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#request-method").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+   $("#request-header").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+   $("#respone").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+   $("#url-domain").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+
+<div id="request-method" style="position:absolute;left:510px;top:100px;width:480px;height:390px;z-index:3;">
+<ul>
+<li><a href="#request-method-page-0"><span>Request</span></a></li>
+<li><a href="#request-method-page-1"><span>Method</span></a></li>
+</ul>
+<div style="height:364px;" id="request-method-page-0">
+</div>
+<div style="height:364px;" id="request-method-page-1">
+</div>
+</div>
+<div id="request-header" style="position:absolute;left:510px;top:520px;width:480px;height:390px;z-index:4;">
+<ul>
+<li><a href="#request-header-page-0"><span>Request Header</span></a></li>
+</ul>
+<div style="height:364px;" id="request-header-page-0">
+</div>
+</div>
+<div id="respone" style="position:absolute;left:0px;top:520px;width:480px;height:390px;z-index:5;">
+<ul>
+<li><a href="#respone-page-0"><span>Response</span></a></li>
+</ul>
+<div style="height:364px;" id="respone-page-0">
+</div>
+</div>
+<div id="url-domain" style="position:absolute;left:0px;top:100px;width:480px;height:390px;z-index:6;">
+<ul>
+<li><a href="#url-domain-page-0"><span>URL Domain</span></a></li>
+</ul>
+<div style="height:364px;" id="url-domain-page-0">
+</div>
+</div>
+</div>
+<div id="Layer1" style="position:relative;text-align:center;width:100%;height:98px;float:right;clear:both;z-index:7;">
+<div id="Layer1_Container" style="width:1000px;height:98px;position:relative;margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;text-align:left;">
+<input type="text" id="drop-api" style="position:absolute;left:0px;top:24px;width:788px;height:38px;z-index:0;" name="Editbox1" value="" spellcheck="false" placeholder="Drop API Here">
+<input type="submit" id="Button1" name="" value="Submit" style="position:absolute;left:825px;top:24px;width:175px;height:50px;z-index:1;">
+</div>
+</div>
+</body>
+</html>
