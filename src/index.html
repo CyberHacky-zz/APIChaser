@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
     <link rel="stylesheet" href="assets/css/Sidebar-Menu.css">
@@ -16,6 +17,21 @@
 </head>
 
 <body style="width: 100%;height: 100%;background-color: rgb(231,231,231);">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="height: 50px;background-color: rgb(151,161,171);">
+        <div class="container"><a class="navbar-brand" href="#" style="margin-left: 10pxpx;margin-right: 10pxpx;">API Chaser</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color: rgb(51,51,51);font-size: 20px;filter: brightness(0%) contrast(100%);">OWASP TOP 10</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgb(51,51,51);font-size: 20px;filter: brightness(0%) contrast(100%);">Manual</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(51,51,51);font-size: 20px;filter: brightness(0%) contrast(100%);">Account</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
     <div id="wrapper">
         <div class="text-center" id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -32,7 +48,7 @@
                         <div class="input-group-prepend"><span class="border rounded-0 input-group-text">API</span></div><input class="border rounded-0 form-control" type="text">
                         <div class="input-group-append">
                             <div class="dropdown btn-group" role="group"><button class="btn btn-primary dropdown-toggle border rounded-0" data-toggle="dropdown" aria-expanded="false" type="button">Method&nbsp;</button>
-                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">GET</a><a class="dropdown-item" role="presentation" href="#">POST</a></div>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a></div>
                             </div><button class="btn btn-primary border rounded-0" type="button" style="margin-left: 10px;width: 100px;">Submit</button></div>
                     </div>
                 </div>
