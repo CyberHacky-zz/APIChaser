@@ -1,15 +1,54 @@
 {
   "name": "apichaser",
   "version": "1.0.0",
-  "description": "",
+  "description": "API Pentesting Tool",
   "main": "index.js",
   "scripts": {
     "electron": "electron ."
   },
-  "author": "",
+
+  "repository": "https://github.com/CyberHacky/chaser",
+  "homepage": "https://github.com/CyberHacky/chaser",
+  "keywords": [
+    "Electron",
+    "API Pentesting",
+    "Hacking Tool"
+  ],
+
+
+  "author": "TechCreature",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "axios": "^0.19.2",
     "electron": "^7.1.11"
+  },
+
+
+  "build":{
+
+    "appId": "com.techcreature.chaser",
+    "copyright": "Copyright 2019 Techcreature.space",
+    "publish":{
+      "provider": "github"
+    },
+
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "dmg"
+    },
+
+    "win": {
+      "target": "zip",
+      "certificateFile": "private/techcreature.pfx",
+      "certificatePassword": "",
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "techcreature"
+    },
+
+    "linux": {
+      "category": "Utility"
+    }
+
   }
+
 }
