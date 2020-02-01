@@ -19,66 +19,107 @@
     <div id="wrapper">
         <div class="text-center" id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"> <a class="text-capitalize text-center" href="#" style="color: rgb(237,230,231);background-color: #3f51ad;font-size: 25px;">Domain</a></li>
+                <li class="sidebar-brand"> <a class="text-capitalize text-center" href="#"
+                        style="color: rgb(237,230,231);background-color: #3f51ad;font-size: 25px;">Domain</a></li>
                 <li> <a href="#">Domain 1</a></li>
                 <li> <a href="#">Domain 2</a></li>
                 <li> <a href="#">Domain 3</a></li>
             </ul>
         </div>
         <div class="page-content-wrapper">
-            <div class="container-fluid" style="height: 300px;"><a class="btn btn-link" role="button" id="menu-toggle" href="#menu-toggle"><i class="fa fa-bars"></i></a>
+            <div class="container-fluid" style="height: 300px;"><a class="btn btn-link" role="button" id="menu-toggle"
+                    href="#menu-toggle"><i class="fa fa-bars"></i></a>
                 <div class="col">
                     <div class="input-group">
-                        <div class="input-group-prepend"><span class="border rounded-0 input-group-text">API</span></div><input class="border rounded-0 form-control" type="text">
+                        <div class="input-group-prepend"><span class="border rounded-0 input-group-text">API</span>
+                        </div>
+                        <input id="apiUrlInput" class="border rounded-0 form-control" type="text" />
                         <div class="input-group-append">
-                            <div class="dropdown btn-group" role="group"><button class="btn btn-primary dropdown-toggle border rounded-0" data-toggle="dropdown" aria-expanded="false" type="button">Method&nbsp;</button>
-                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">GET</a><a class="dropdown-item" role="presentation" href="#">POST</a></div>
-                            </div><button class="btn btn-primary border rounded-0" type="button" style="margin-left: 10px;width: 100px;">Submit</button></div>
+                            <select id="methodDropDown" class="btn btn-primary" role="group">
+                                <div>
+                                    <option value="GET">GET</option>
+                                    <option value="PUT">PUT</option>
+                                    <option value="POST">POST</option>
+                                    <option value="HEAD">HEAD</option>
+                                    <option value="UPDATE">UPDATE</option>
+                                    <option value="OPTIONS">OPTIONS</option>
+                                </div>
+                            </select>
+
+                            <button id="apiSubmitButton" class="btn btn-primary border rounded-0" type="button"
+                                style="margin-left: 10px;width: 100px;">Submit</button>
+                        </div>
                     </div>
                 </div>
-                <div class="row" style="height: 10px;"></div><div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Request Header</th>
-                <th>Response Header</th>
-                <th>Response Body</th>
-            </tr>
-            <tr>
-                <td><div class="col p-3">
-                            <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape 
-  swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade 
-  ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh 
-  synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p> 
-  
+            </div>
+            <div class="row" style="height: 10px;"></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Request Header</th>
+                            <th>Response Header</th>
+                            <th>Response Body</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="col p-3">
+                                    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia
+                                        mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag
+                                        Brooklyn deep v PBR narwhal sustainable mixtape
+                                        swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v
+                                        taxidermy messenger bag. Tofu YOLO Etsy, direct trade
+                                        ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic
+                                        irony, street art organic Bushwick artisan cliche semiotics ugh
+                                        synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
+                                        sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
 
-          </div></td>
-                <td><div class="col p-3">
-            <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape 
-swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade 
-ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh 
-synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p> 
 
-        </div></td>
-                <td><div class="col p-3">
-           
-            <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape 
-swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade 
-ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh 
-synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p> 
+                                </div>
+                            </td>
+                            <td>
+                                <div class="col p-3">
+                                    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia
+                                        mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag
+                                        Brooklyn deep v PBR narwhal sustainable mixtape
+                                        swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v
+                                        taxidermy messenger bag. Tofu YOLO Etsy, direct trade
+                                        ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic
+                                        irony, street art organic Bushwick artisan cliche semiotics ugh
+                                        synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
+                                        sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
 
-        </div></td>
-            </tr>
-        </thead>
-        
-    </table>
-</div></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="col p-3">
+
+                                    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia
+                                        mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag
+                                        Brooklyn deep v PBR narwhal sustainable mixtape
+                                        swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v
+                                        taxidermy messenger bag. Tofu YOLO Etsy, direct trade
+                                        ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic
+                                        irony, street art organic Bushwick artisan cliche semiotics ugh
+                                        synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
+                                        sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
         </div>
+    </div>
     </div>
     <div></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Sidebar-Menu.js"></script>
+    <script type="module" src="../formyform.js"> </script>
+    <script type="module" src="../consts.js"> </script>
 </body>
 
 </html>
